@@ -1,0 +1,24 @@
+{
+  "name": "social-server",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/social-server/src",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "social-server:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "social-server:build:development"
+        },
+        "production": {
+          "buildTarget": "social-server:build:production"
+        }
+      }
+    }
+  },
+  "tags": []
+}
