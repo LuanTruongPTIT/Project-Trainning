@@ -14,7 +14,12 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@social-server/features": ["libs/features/src/index.ts"],
+      "@social-server/lib": ["lib/src/index.ts"],
+      "@social-server/libs": ["libs/src/index.ts"],
+      "@social-server/server/shared": ["libs/server/shared/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
